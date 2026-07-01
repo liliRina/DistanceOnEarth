@@ -17,7 +17,11 @@ Dadata	dadata.ru/profile	API-ключ и Секретный ключ
 ## 🚀 Сборка и Запуск  
 docker compose up --build  
 
-### bash
+### bash  
+```bash  
 curl -X POST http://localhost:8080/api/geo/ -H "Content-Type: application/json" -d '{"address":"Москва, Красная площадь, 1"}'
+```
 ### PowerShell
+```PowerShell
 curl.exe -X POST http://localhost:8080/api/geo/ -H "Content-Type: application/json" -d '{\"address\": \"Москва, ул Тверская, 1\"}'
+```
