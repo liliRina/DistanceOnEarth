@@ -16,3 +16,13 @@ Yandex Maps API	developer.tech.yandex.ru	Ключ геокодера (Geocoder A
 Dadata	dadata.ru/profile	API-ключ и Секретный ключ    
 🚀 Запуск  
 docker compose up --build  
+
+📡 API
+Расчёт расстояния между координатами
+POST /api/geo
+bash
+curl -X POST http://localhost:8080/api/geo/ \
+-H "Content-Type: application/json" \
+-d '{"address":"Москва, Красная площадь, 1"}'
+
+curl.exe -X POST http://localhost:8080/api/geo/ -H "Content-Type: application/json" -d '{\"address\": \"Москва, ул Тверская, 1\"}'
