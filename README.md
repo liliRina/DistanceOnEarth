@@ -1,6 +1,6 @@
-🌍 DistanceOnEarth  
+# 🌍 DistanceOnEarth
 Spring Boot приложение для сравнения геокоординат от Yandex Maps API и Dadata API.  
-🔧 Настройка окружения  
+## 🔧 Настройка окружения  
 Создайте файл .env в корне проекта:  
 .env  
 
@@ -14,15 +14,15 @@ YANDEX_API_KEY=*
 Ключи:  
 Yandex Maps API	developer.tech.yandex.ru	Ключ геокодера (Geocoder API)  
 Dadata	dadata.ru/profile	API-ключ и Секретный ключ    
-🚀 Запуск  
+## 🚀 Запуск  
 docker compose up --build  
 
 📡 API
 Расчёт расстояния между координатами
-POST /api/geo
-bash
+POST /api/geo  
+### bash
 curl -X POST http://localhost:8080/api/geo/ \
 -H "Content-Type: application/json" \
 -d '{"address":"Москва, Красная площадь, 1"}'
-
+### PowerShell
 curl.exe -X POST http://localhost:8080/api/geo/ -H "Content-Type: application/json" -d '{\"address\": \"Москва, ул Тверская, 1\"}'
